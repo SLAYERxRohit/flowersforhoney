@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Just For You, My Love</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&display=swap">
+<link rel="stylesheet" href="style.css"></head><body>
+<canvas id="fx"></canvas>
+<svg width="0" height="0" style="position:absolute"><defs>
+<radialGradient id="pg1" cx="50%" cy="100%" r="105%"><stop offset="0" stop-color="#b57d0c"/><stop offset=".4" stop-color="#e5b22a"/><stop offset="1" stop-color="#fbe57c"/></radialGradient>
+<radialGradient id="pg2" cx="50%" cy="100%" r="105%"><stop offset="0" stop-color="#c58d12"/><stop offset=".45" stop-color="#f0c53c"/><stop offset="1" stop-color="#fff0a0"/></radialGradient>
+<radialGradient id="pg3" cx="50%" cy="100%" r="105%"><stop offset="0" stop-color="#a87208"/><stop offset=".4" stop-color="#d9a21f"/><stop offset="1" stop-color="#f6d768"/></radialGradient>
+<radialGradient id="hl" cx="50%" cy="10%" r="60%"><stop offset="0" stop-color="#fff" stop-opacity=".55"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+<radialGradient id="ct" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#7a4a05"/><stop offset="1" stop-color="#c58a12"/></radialGradient>
+<linearGradient id="lf" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4f7a34"/><stop offset="1" stop-color="#2c5222"/></linearGradient>
+<linearGradient id="pp" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fffdf5"/><stop offset=".5" stop-color="#f5e9c8"/><stop offset="1" stop-color="#e8d6a4"/></linearGradient>
+</defs></svg>
+
+<section id="hero">
+  <div class="script" style="font-size:1.8rem">for my love</div>
+  <svg id="bouquet" viewBox="0 0 600 720" aria-label="A bouquet of yellow roses wrapped in cream paper"></svg>
+  <h1>Just For You, My Love 💛</h1>
+  <p class="sub">If I could give you one thing in this world, it would be the ability to see yourself through my eyes.</p>
+  <button class="btn" data-go="#letter">Open Your Surprise</button>
+</section>
+
+<section id="letter">
+  <div class="paper fade">
+    <h2 class="script" style="font-size:clamp(2.6rem,7vw,4rem)">A Little Something For You</h2>
+    <p>These yellow roses are for you, because you bring warmth, happiness, and sunshine into my life. Every flower reminds me of how special you are to me. I wish I could give you a million roses, but for now, let these remind you how much you mean to me.</p>
+  </div>
+</section>
+
+<section id="garden">
+  <h2 class="fade">Pick a Rose</h2>
+  <p class="sub fade">Each one holds a little something I want you to know.</p>
+  <div class="field" id="field"></div>
+  <p id="msg" aria-live="polite"></p>
+</section>
+
+<section id="final">
+  <div class="bg" id="fbg"></div>
+  <h2 class="fade">To My Favorite Person</h2>
+  <p class="m fade">Just like these roses, I hope your days are always filled with warmth, beauty, and happiness. Never forget how loved and appreciated you are. You’re my sunshine. 💛</p>
+  <div class="script fade">Forever yours. ❤️</div>
+  <button class="btn" data-go="#hero">Back to the Bouquet</button>
+</section>
+
+<script src="script.js"></script>
+</body></html>
